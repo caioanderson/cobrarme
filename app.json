@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "teste_create_project",
+    "slug": "teste_create_project",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "teste_create_project"
+}
