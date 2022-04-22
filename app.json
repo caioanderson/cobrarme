@@ -2,10 +2,14 @@
   "expo": {
     "name": "teste_create_project",
     "slug": "teste_create_project",
+    "schema": "teste_create_project",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "splash": {
+      "backgroundColor": "#F8A836"
+    }
   },
   "name": "teste_create_project"
 }

@@ -1,0 +1,69 @@
+{
+    "accounts": [
+        {
+            "id": "1",
+            "type": "debit",
+            "account": {
+                "name": "Spotify"
+            },
+            "category": "#musica",
+            "amount": 4.00,
+            "admin_account" : {
+                "name": "João",
+                "info_payment": "012346789123.bcfpixjoao@gmail.com1781234012458****aksd"
+            }
+        },
+        {
+            "id": "2",
+            "type": "no-debit",
+            "account": {
+                "name": "Netflix"
+            },
+            "category": "#filmes e séries",
+            "amount": 4.00,
+            "admin_account" : {
+                "name": "João",
+                "info_payment": "012346789123.bcfpixjoao@gmail.com1781234012458****aksd"
+            }
+        },
+        {
+            "id": "3",
+            "type": "debit",
+            "account": {
+                "name": "HBO Max"
+            },
+            "category": "#filmes e séries",
+            "amount": 2.80,
+            "admin_account" : {
+                "name": "Pedro",
+                "info_payment": "012346789123.bcfpixPedro@gmail.com1781234012458****aksd"
+            }
+        },
+        {
+            "id": "4",
+            "type": "no-debit",
+            "account": {
+                "name": "Amazon Prime"
+            },
+            "category": "#compras",
+            "amount": 4.00,
+            "admin_account" : {
+                "name": "João",
+                "info_payment": "012346789123.bcfpixjoao@gmail.com1781234012458****aksd"
+            }
+        },
+        {
+            "id": "5",
+            "type": "debit",
+            "account": {
+                "name": "Disney+"
+            },
+            "category": "#musica",
+            "amount": 5.00,
+            "admin_account" : {
+                "name": "Pedro",
+                "info_payment": "012346789123.bcfpixpedro@gmail.com1781234012458****aksd"
+            }
+        }
+    ]
+}

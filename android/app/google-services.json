@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "887525988758",
+    "project_id": "vital-domain-345216",
+    "storage_bucket": "vital-domain-345216.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887525988758:android:7d776fbbd86412d61c25b7",
+        "android_client_info": {
+          "package_name": "com.testecreateproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887525988758-nb6hr8j5om8sut202e6e0to50mnmjakl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.testecreateproject",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "887525988758-jhndkesi88008vcoottq7g4nj7rm0i6t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrvJEaOVY97UFpXrI86m5K-bz_JkrRWiU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887525988758-jhndkesi88008vcoottq7g4nj7rm0i6t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
