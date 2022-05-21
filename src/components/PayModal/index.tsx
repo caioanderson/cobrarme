@@ -35,7 +35,7 @@ export function PayModal({ data, closeModal }: PayModalProps) {
             <AreaModal>
                 <Line />
                 <WrapperContent>
-                    <Question>Pagar a conta <Bold>{data.account.name}</Bold> {'\n'}
+                    <Question>Pagar a conta <Bold>{data.name}</Bold> {'\n'}
                         no valor de R$ <Bold>{Number(data.amount).toFixed(2)}</Bold> ?</Question>
 
                     <ContainerButtons>

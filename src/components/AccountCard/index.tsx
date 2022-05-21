@@ -17,6 +17,7 @@ interface Payment{
 export interface AccountCardProps {
     type: 'debit' | 'no-debit';
     account: Account;
+    name: string;
     category: string;
     amount: number;
     admin_account: Payment;
@@ -39,7 +40,7 @@ export function AccountCard({ data, ...rest }: Props) {
             <Account>
                 {/* <Icon source={Spotify} /> */}
                 <Detail>
-                    <AccountName>{data.account.name}</AccountName>
+                    <AccountName>{data.name}</AccountName>
                     <CategoryName>{data.category}</CategoryName>
                 </Detail>
             </Account>

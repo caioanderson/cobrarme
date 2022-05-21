@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { SafeAreaView } from 'react-native';
 import LottieView from 'lottie-react-native'
 
-import api from '../../service/api';
-import { getData } from '../../service/database';
+import { getAccountsDebit } from '../../service/database';
 import { useAuth } from '../../hooks/auth';
 
 import {
@@ -50,18 +49,12 @@ export function Home() {
     }
 
     useEffect(() => {
-        async function loadAccounts() {
-            const response = await api.get("accounts").then(response => response.data);
-            const accountsDebits = response.filter((item: DataListProps) => item.type === 'debit');
-            setData(accountsDebits);
+        async function loadDataFirestore(){
+            const accountDebits = await getAccountsDebit();
+            setData(accountDebits);
             setLoading(false);
         }
 
-        async function loadDataFirestore(){
-            await getData();
-        }
-
-        loadAccounts();
         loadDataFirestore();
     }, [])
 
@@ -113,7 +106,7 @@ export function Home() {
                     data?.length !== 0 ? (
                         <AccountList
                             data={data}
-                            keyExtractor={item => item.id}
+                            keyExtractor={item => String(item.id)}
                             renderItem={({ item }) => <AccountCard data={item} onPress={() => handleOpenPayModal(item)}
                             />}
                         />

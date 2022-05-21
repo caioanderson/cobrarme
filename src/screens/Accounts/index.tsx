@@ -4,10 +4,9 @@ import LottieView from 'lottie-react-native'
 
 import { AccountCard } from '../../components/AccountCard';
 import { Divider } from '../../components/Divider';
-
-import api from '../../service/api';
-
 import { DataListProps } from '../Home';
+
+import { getAllAccounts } from '../../service/database';
 
 import loadingAnimate from '../../assets/animations/teste.json';
 import {
@@ -17,6 +16,8 @@ import {
     Loading
 } from './styles';
 
+
+
 export function Accounts() {
 
     const [accounts, setAccount] = useState<DataListProps[]>();
@@ -25,13 +26,13 @@ export function Accounts() {
     const total = accounts?.reduce((acc, item) => acc + item.amount, 0);
 
     useEffect(() => {
-        async function loadAccounts() {
-            const response = await api.get("accounts").then(response => response.data);
-            setAccount(response);
+        async function loadDataFirestore(){
+            const accounts = await getAllAccounts();
+            setAccount(accounts);
             setLoading(false);
         }
 
-        loadAccounts();
+        loadDataFirestore();
     }, [])
 
     return (
