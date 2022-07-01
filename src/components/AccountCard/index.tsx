@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { ImageSourcePropType, TouchableOpacity, TouchableOpacityProps } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
-// import Spotify from '../../assets/spotify.png';
 import { Container, Icon, Account, AccountName, CategoryName, Amount, Detail } from './style';
 
 interface Account {
@@ -18,6 +17,7 @@ export interface AccountCardProps {
     type: 'debit' | 'no-debit';
     account: Account;
     name: string;
+    urlImage: string;
     category: string;
     amount: number;
     admin_account: Payment;
@@ -38,7 +38,7 @@ export function AccountCard({ data, ...rest }: Props) {
     return (
         <Container {...rest}>
             <Account>
-                {/* <Icon source={Spotify} /> */}
+                <Icon source={{ uri: data.urlImage }} />
                 <Detail>
                     <AccountName>{data.name}</AccountName>
                     <CategoryName>{data.category}</CategoryName>

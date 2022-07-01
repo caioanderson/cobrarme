@@ -108,7 +108,8 @@ export function Home() {
                             data={data}
                             keyExtractor={item => String(item.id)}
                             renderItem={({ item }) => <AccountCard data={item} onPress={() => handleOpenPayModal(item)}
-                            />}
+                            />
+                        }
                         />
                     ) : (
                         <EmptyState />

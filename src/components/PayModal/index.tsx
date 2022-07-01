@@ -19,12 +19,13 @@ interface PayModalProps {
 }
 
 export function PayModal({ data, closeModal }: PayModalProps) {
+    console.log("🚀 ~ file: index.tsx ~ line 22 ~ PayModal ~ data", data)
 
     const { setSinglePayment } = useSinglePayment();
 
     const { navigate } = useNavigation<NavigationStack>();
 
-    function handleScreenPayment(){
+    function handleScreenPayment() {
         closeModal();
         setSinglePayment(data);
         navigate("SinglePayment");

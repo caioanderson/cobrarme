@@ -16,7 +16,7 @@ import {
 export function SinglePayment() {
 
     const { dataAccount } = useSinglePayment();
-
+ 
     function handleClipBoard() {
         Clipboard.setString(dataAccount.admin_account.info_payment);
     }

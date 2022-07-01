@@ -14,7 +14,10 @@ export const Container = styled.TouchableOpacity`
     justify-content: space-between;
 `;
 
-export const Icon = styled.Image``;
+export const Icon = styled.Image`
+    height: ${RFValue(30)}px;
+    width: ${RFValue(30)}px;
+`;
 
 export const Account = styled.View`
     flex-direction: row;
