@@ -29,7 +29,6 @@ interface GroupProps {
 export function GroupCard({ data }: GroupProps) {
   
     const isExistsDebits = data.members.users.some(account => account.type === 'debit');
-    console.log("🚀 ~ file: index.tsx ~ line 33 ~ GroupCard ~ isExistsDebits", isExistsDebits)
 
     return (
         <GestureHandlerRootView>
